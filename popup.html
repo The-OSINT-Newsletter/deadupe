@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Deadupe</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Deadupe</h1>
+      <p class="tagline">Hide visited sites from search</p>
+    </div>
+    
+    <div class="content">
+      <div class="toggle-section">
+        <label class="switch">
+          <input type="checkbox" id="toggle">
+          <span class="slider"></span>
+        </label>
+        <div class="status-info">
+          <span id="status" class="status inactive">Inactive</span>
+        </div>
+      </div>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <span id="count" class="stat-value">0 websites tracked</span>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <button id="clearHistory" class="btn-clear">Clear History</button>
+      </div>
+      
+      <div class="info">
+        <p class="info-text">When active, Deadupe will hide previously visited websites from your Google search results.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
